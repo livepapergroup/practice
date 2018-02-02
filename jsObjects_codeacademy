@@ -1,0 +1,23 @@
+let person = {
+  name: 'Mike',
+  age: 28,
+  weekendAlarm: 'No alarms needed',
+  weekAlarm: 'Alarm set to 7AM',
+  sayHello() {
+    return `Hello, my name is ${this.name}`
+  }
+};
+
+let day = 'Friday'
+let alarm;
+
+if (day === 'Saturday' || day === 'Sunday') {
+  alarm = 'weekendAlarm';
+} else {
+  alarm = 'weekAlarm'
+}
+
+console.log(person['name']);
+console.log(person['age']);
+console.log(person[alarm]);
+console.log(person.sayHello())
